@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="news/98.css">
+    <title>Interactive Website</title>
+</head>
+<body background="plain-background.jpg">
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about" onclick="showSection('about')">About</a></li>
+            <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Main Content Section -->
+    <section id="about">
+        <h3>About</h3>
+        <div class="box">
+            <img src="me.jpg" style="height: 200px; width: 200px;">
+            <p> Hello, I'm Ryan Vincent Cruz, Currently pursuing my studies in Information Technology at Phinma University. My academic journey has been driven by a deep passion for technology, particularly in building web and applications. Whether it's through collaborative projects and workshops and Continuously pushing boundaries to create applications that make a positive impact.</p>
+        </div>
+       
+    </section>
+
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <img src="pjt2-1.jpg" style="width: 200px; text-align: center;">
+        <p>Welcome to the fascinating realm of music instruments! As you step into
+            our shop, prepare to embark on a journey through a vast collection of
+            musical marvels. From guitars and pianos to drums and brass instruments, we offer a diverse range that caters to all musical tastes and preferences. Whether you are a seasoned musician or a curious beginner, our shop
+            provides a welcoming environment for you to explore and discover the
+            perfect instrument that resonates with your musical aspirations.</p>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, comments, or feedback, we'd love to hear from you! You can reach us via email at [ryanestayocruz@gmail.com], phone at [+6397769222090], or by filling out the contact form on our website. We're always here to help and look forward to hearing from you soon!</p>
+        <p>Email: vincecafe@example.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Interactive Website</p>
+    </footer>
+
+    <!-- JavaScript to toggle sections -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
